@@ -22,11 +22,11 @@ import HomeScreen from './App/views/HomeScreen'
 const RestaurantApp = DrawerNavigator({
   Home: {
     path:'/',
-    screen: DescriptionScreen
+    screen: HomeScreen
   },
   Description:{
     path:'/description',
-    screen: HomeScreen
+    screen: DescriptionScreen
   }
 
 });

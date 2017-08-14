@@ -50,7 +50,10 @@ colors={['#B5A287','#D3C19E']}
          barStyle="light-content"
        />
 
-<Header titulo='Inicio' navigation={this.props.navigation} />
+<Header
+  btnMenu={true}
+   titulo='Inicio'
+   navigation={this.props.navigation} />
 <ScrollView style={styles.scrollCont} >
 <Carousel
   style={styles.carouselCont}

@@ -40,7 +40,10 @@ if (key == this.id_) {
   render() {
     return (
 <View style={styles.containerDesc} >
-  <Header titulo='Description'  navigation={this.props.navigation} />
+  <Header
+    backBtn={true}
+    titulo='Description'
+    navigation={this.props.navigation} />
 <View style={styles.contImgCover}>
   <Image
     style={styles.imgCover}

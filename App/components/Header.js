@@ -28,6 +28,11 @@ render() {
   source={require('../stactic/icons/menu.png')} />
 </TouchableOpacity>
 }
+  {this.props.backBtn == true &&
+<TouchableOpacity style={styles.headerIconMenuCont}  onPress={ () => this.props.navigation.goBack() } >
+<Text style={styles.headerTittle} >Back</Text>
+</TouchableOpacity>
+}
 
 <Text style={styles.headerTittle} >{this.props.titulo}</Text>
 
