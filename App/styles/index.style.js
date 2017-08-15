@@ -7,6 +7,7 @@ const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window'
 const slideHeight = viewportHeight * 0.4;
 const slideWidth = wp(85);
 const itemHorizontalMargin = wp(2);
+const backDescripWidth = wp(95);
 
 function wp (percentage) {
   const value = (percentage * viewportWidth) / 100;
@@ -17,7 +18,11 @@ export const sliderWidth = viewportWidth;
 export const itemWidth = slideWidth + itemHorizontalMargin * 2;
 const PhotoWidth = itemWidth-40;
 const entryBorderRadius = 8;
-
+const activeOrNo = {
+  grande:1,
+  peq:0.5,
+  med:0.5,
+};
 
 export default StyleSheet.create({
 // HomeScreen Styles ---- >
@@ -76,8 +81,9 @@ alignItems:'center',
 justifyContent:'center'
 },
 tituloIngredients:{
+flex:1,
 fontSize:18,
-textAlign: 'center'
+textAlign: 'left'
 },
 ingredientsListCont:{
   flex:1,
@@ -171,7 +177,62 @@ zIndex:0
 },
 flexCont:{
   flex:1,
+},
+tituloIngrDescp:{
+fontSize:18,
+textAlign: 'left'
+},
+tituloIngrDescp:{
+fontSize:18,
+textAlign: 'left'
+},
+btnAddIngredientes:{
+  flex:1,
+  justifyContent:'center',
+  alignItems:'center',
+  marginTop:10,
+  marginBottom:10,
+  borderWidth:0.7,
+  borderColor:'#d5d2c7',
+  padding:2,
+  paddingTop:15,
+  paddingBottom:15,
+  borderRadius:8
+},
+btnEdit:{
+  flex:1,
+  fontSize:18,
+  textAlign:'right',
+},
+sizePizzasCont:{
+  flex:1,
+  flexDirection:'row',
+  justifyContent:'center',
+  alignItems:'center'
+},
+btnSizePizza:{
+  flex:1,
+  justifyContent:'center',
+  alignItems:'center',
+  marginTop:10,
+  marginBottom:10,
+},
+iconPizzaPeq: {
+  width:32,
+  height:32,
+  opacity:activeOrNo.peq,
+},
+iconPizzaMed: {
+  width:42,
+  height:42,
+  opacity:activeOrNo.med,
+},
+iconPizzaGrand: {
+  width:48,
+  height:48,
+  opacity:activeOrNo.grande,
+},
+iconActive:{
+opacity:1
 }
-
-
 });
