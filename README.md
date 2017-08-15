@@ -12,11 +12,14 @@ Luego de clonar el repositorio,entramos en el directorio
 
 ``` cd RestaurantApp-React-Native ```
 
-Una vez dentro del directorio, procedemos a instalar las dependencias en npm
+Una vez dentro del directorio, procedemos a instalar las dependencias en npm:
 
 ``` npm install ```
-Luego de terminar la instalacion de dependencias ya podemos iniciar la plicacion
+
+Luego de terminar la instalacion de dependencias ya podemos iniciar la plicacion:
 
 ``` react-native run-android ```
 
 **Nota:** Antes de iniciar la aplicacion debes tener iniciado el Emulador Android O tener conectado un Movil para que sea detectado por el compilador.
+
+En la carpeta **Imagenes-App** hay imagenes de la Aplicacion corriendo en el Emulador.

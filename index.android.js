@@ -18,7 +18,7 @@ import DescriptionScreen from './App/views/descriptionScreen'
 import HomeScreen from './App/views/HomeScreen'
 
 
-
+//  Navegador de la aplicacion
 const RestaurantApp = DrawerNavigator({
   Home: {
     path:'/',
