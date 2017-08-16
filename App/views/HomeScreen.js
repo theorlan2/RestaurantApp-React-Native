@@ -31,7 +31,7 @@ export default class HomeScreen extends Component {
 constructor(props){
   super(props)
 this.Cell = ArrayPizzas.map((val,key)=>{
-return <CarouselCell key={key}  titulo={val.nombre}    imagen={val.imagen}    ingredientes={val.ingredientes} keyval={key}   />
+return <CarouselCell key={key}  titulo={val.nombre} navigation={this.props.navigation}   imagen={val.imagen}    ingredientes={val.ingredientes} keyval={key}   />
 });
 
 }

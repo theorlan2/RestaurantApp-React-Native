@@ -86,6 +86,10 @@ render(){
      </View>
 
      <View  style={styles.btnSizePizza} >
+       <Image
+         style={styles.iconCheckIcon} source={require('../stactic/icons/checkd-icon.png')}  />
+
+
       <Image
         style={styles.iconPizzaGrand} source={require('../stactic/icons/pizza.png')}  />
      <Text   style={styles.nomIngredient} >1200 g</Text>

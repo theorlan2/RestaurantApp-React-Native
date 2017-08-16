@@ -54,7 +54,7 @@ render(){
 {this.ListIngredientes}
    </View>
 
-    <TouchableOpacity style={styles.btnSelectP} >
+    <TouchableOpacity style={styles.btnSelectP} onPress={() => this.props.navigation.navigate('Description')} >
       <Text style={styles.btnSelectPText} >Selecionar</Text>
     </TouchableOpacity>
 

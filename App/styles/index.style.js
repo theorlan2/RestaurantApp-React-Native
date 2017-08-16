@@ -234,5 +234,13 @@ iconPizzaGrand: {
 },
 iconActive:{
 opacity:1
+},
+iconCheckIcon:{
+  position:'absolute',
+  top:-4,
+  right:14,
+  width:24,
+  height:24,
+  zIndex:10
 }
 });
