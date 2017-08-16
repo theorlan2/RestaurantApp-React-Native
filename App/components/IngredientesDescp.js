@@ -23,6 +23,7 @@ const iconsMap = {
   'cinnamon.png': require('../stactic/icons/cinnamon.png'),
   'fish.png': require('../stactic/icons/fish.png'),
   'sauce.png': require('../stactic/icons/sauce.png'),
+  'checkd-icon.png': require('../stactic/icons/checkd-icon.png'),
 };
 
 const size = 'Grande';

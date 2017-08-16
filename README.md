@@ -1,5 +1,7 @@
 # RestaurantApp React-Native
 
+![GitHub Logo](/Imagenes-App/imagen-home.png)
+
  Primera aplicacion de **React-Native** para android, luego estare haciendo la version para IOS,esto es solo un ejemplo, para aprenderlo a usar.
 
   Para iniciar la aplicacion es necesario tener el **Emulador de Android** o un Movil android que el compilador logre detectar.
