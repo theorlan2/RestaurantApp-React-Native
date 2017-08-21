@@ -1,6 +1,7 @@
 # RestaurantApp React-Native
+Diseño inspirado de:https://www.uplabs.com/posts/application-for-restourant
 
-![GitHub Logo](/Imagenes-App/imagen-home.png)
+![Imagen aplicacion](/Imagenes-App/imagen-home.png)
 
  Primera aplicacion de **React-Native** para android, luego estare haciendo la version para IOS,esto es solo un ejemplo, para aprenderlo a usar.
 
