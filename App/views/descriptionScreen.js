@@ -11,8 +11,6 @@ import {
   ScrollView,
   View
 } from 'react-native';
-// Navegador entre paginas
-import { StackNavigator } from 'react-navigation';
  // Componente de Gradient
 import LinearGradient from 'react-native-linear-gradient'
 
