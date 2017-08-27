@@ -3,12 +3,12 @@ import {  AppRegistry, } from 'react-native';
 import { DrawerNavigator } from 'react-navigation';
 
 // Vistas
-import DescriptionScreen from './App/screens/descriptionScreen'
-import HomeScreen from './App/screens/HomeScreen'
+import DescriptionScreen from '../screens/descriptionScreen'
+import HomeScreen from '../screens/HomeScreen'
 
 
 //  Navegador de la aplicacion
-const RestaurantApp = DrawerNavigator({
+export default RestaurantApp = DrawerNavigator({
   Home: {
     path:'/',
     screen: HomeScreen
