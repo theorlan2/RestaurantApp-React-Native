@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
   Image,
   Text,
   TouchableOpacity,
-  ScrollView,
   View
 } from 'react-native';
 
-import styles from '../styles/index.style'
-
-const iconsMap = {
-  'tomato.png': require('../stactic/icons/tomato.png'),
-  'cheese.png': require('../stactic/icons/cheese.png'),
-  'chili-pepper.png': require('../stactic/icons/chili-pepper.png'),
-};
-
+import styles from './styles'
+import  iconsMap  from '../../config/images'
 
 export default class CarouselCell extends Component {
   constructor(props){

@@ -4,7 +4,6 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   StyleSheet,
   Image,
   Text,
@@ -17,10 +16,56 @@ import LinearGradient from 'react-native-linear-gradient'
 // Componentes Propios
 import  Header from '../components/Header'
 import  IngredientesDescp from '../components/IngredientesDescp'
+import { sliderWidth, itemWidth,itemHorizontalMargin } from '../config/styles'
 
-import styles from '../styles/index.style'
+import { ArrayPizzas } from '../config/Pizzas'
 
-import { ArrayPizzas } from '../stactic/js/Pizzas'
+const styles = StyleSheet.create({
+// Carousel Descripcion Styles  <----
+containerDesc:{
+flex: 1,
+justifyContent: 'center',
+alignItems: 'center',
+backgroundColor:'#2f241b'
+},
+scrollCont:{
+width:itemWidth
+},
+contImgCover:{
+flex:1,
+justifyContent: 'center',
+alignItems: 'center',
+position:'absolute',
+top:0,
+left:0,
+zIndex:-1
+},
+imgCover: {
+opacity:0.2,
+resizeMode:'cover'
+},
+coverLetters: {
+flex:1,
+marginTop:50,
+marginBottom:50,
+},
+TituloDesc:{
+fontSize:24,
+fontWeight:'bold',
+color:'#fff',
+textAlign:'center'
+},
+SubTituloDesc:{
+fontSize:20,
+color:'#eee',
+textAlign:'center'
+},
+contIngredientesDesc: {
+flex:1
+},
+
+});
+
 
 
 export default class DescriptionScreen extends Component {
@@ -49,8 +94,6 @@ if (key == this.id_) {
   />
 </View>
 <ScrollView style={styles.scrollCont} >
-
-
 <View style={styles.coverLetters}>
   <Text style={styles.TituloDesc} >LOVER CHEESE</Text>
   <Text style={styles.SubTituloDesc} >Classic Thin Crust</Text>

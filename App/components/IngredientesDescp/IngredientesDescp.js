@@ -1,30 +1,16 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
   Image,
   Text,
-  TouchableOpacity,
-  ScrollView,
+  TouchableOpacity, 
   StatusBar,
   View
 } from 'react-native';
 
-import styles from '../styles/index.style'
+import styles from './styles'
 
-const iconsMap = {
-  'tomato.png': require('../stactic/icons/tomato.png'),
-  'cheese.png': require('../stactic/icons/cheese.png'),
-  'chili-pepper.png': require('../stactic/icons/chili-pepper.png'),
-  'roast-chicken.png': require('../stactic/icons/roast-chicken.png'),
-  'onion.png': require('../stactic/icons/onion.png'),
-  'apple.png': require('../stactic/icons/apple.png'),
-  'garlic.png': require('../stactic/icons/garlic.png'),
-  'cinnamon.png': require('../stactic/icons/cinnamon.png'),
-  'fish.png': require('../stactic/icons/fish.png'),
-  'sauce.png': require('../stactic/icons/sauce.png'),
-  'checkd-icon.png': require('../stactic/icons/checkd-icon.png'),
-};
+import iconsMap from '../../config/images'
+
 
 const size = 'Grande';
 
@@ -75,23 +61,23 @@ render(){
 
      <View  style={styles.btnSizePizza} >
       <Image
-        style={styles.iconPizzaPeq} source={require('../stactic/icons/pizza.png')}  />
+        style={styles.iconPizzaPeq} source={require('../../stactic/icons/pizza.png')}  />
      <Text   style={styles.nomIngredient} >200 g</Text>
      </View>
 
      <View  style={styles.btnSizePizza} >
       <Image
-        style={styles.iconPizzaMed} source={require('../stactic/icons/pizza.png')}  />
+        style={styles.iconPizzaMed} source={require('../../stactic/icons/pizza.png')}  />
      <Text   style={styles.nomIngredient} >500 g</Text>
      </View>
 
      <View  style={styles.btnSizePizza} >
        <Image
-         style={styles.iconCheckIcon} source={require('../stactic/icons/checkd-icon.png')}  />
+         style={styles.iconCheckIcon} source={require('../../stactic/icons/checkd-icon.png')}  />
 
 
       <Image
-        style={styles.iconPizzaGrand} source={require('../stactic/icons/pizza.png')}  />
+        style={styles.iconPizzaGrand} source={require('../../stactic/icons/pizza.png')}  />
      <Text   style={styles.nomIngredient} >1200 g</Text>
      </View>
 
@@ -111,10 +97,3 @@ render(){
 
 
 }
-
-const styles2 = StyleSheet.create({
-ingredientsListCont:{
-  flex:1
-}
-
- });

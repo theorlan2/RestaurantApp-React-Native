@@ -1,15 +1,4 @@
-/*
- * @flow
- */
-
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Image,
-  Text,
-  View
-} from 'react-native';
+import {  AppRegistry, } from 'react-native';
 // Navegador entre paginas
 import { DrawerNavigator } from 'react-navigation';
 
@@ -30,7 +19,3 @@ const RestaurantApp = DrawerNavigator({
   }
 
 });
-
-
-
-AppRegistry.registerComponent('RestaurantApp', () => RestaurantApp);

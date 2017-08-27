@@ -3,11 +3,9 @@
  */
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   StyleSheet,
   Image,
   Text,
-  TouchableOpacity,
   ScrollView,
   StatusBar,
   View
@@ -19,23 +17,47 @@ import  Carousel  from 'react-native-snap-carousel';
 
 import {BoxShadow} from 'react-native-shadow'
 
-import { sliderWidth, itemWidth } from '../styles/index.style'
-import styles from '../styles/index.style'
+import { sliderWidth, itemWidth,itemHorizontalMargin } from '../config/styles'
 
-import { ArrayPizzas } from '../stactic/js/Pizzas'
+import { ArrayPizzas } from '../config/Pizzas'
+
 // Componentes Propios
-import Header from '../components/Header'
-import CarouselCell from '../components/Cellcaroucel'
+import Header from '../components/Header/index'
+import CarouselCell from '../components/CarouselCell'
+const styles =  StyleSheet.create({
+  // HomeScreen Styles ---- >
+  container: {
+    flex: 1,
+    flexDirection:'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  carouselCont:{
+    flex:1
+  },
+  scrollCont:{
+    flex:1
+  },
+  sliderContainer: {
+  paddingHorizontal: itemHorizontalMargin,
+  },
+  slider:{
+    flex:1
+  }
+  // HomeScreen Styles < ----
+});
+
 
 export default class HomeScreen extends Component {
+
 constructor(props){
   super(props)
+
 this.Cell = ArrayPizzas.map((val,key)=>{
 return <CarouselCell key={key}  titulo={val.nombre} navigation={this.props.navigation}   imagen={val.imagen}    ingredientes={val.ingredientes} keyval={key}   />
 });
 
 }
-
 
 
   render() {
